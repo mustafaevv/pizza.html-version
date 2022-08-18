@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza</title>
+    <link rel="shortcut icon" href="images/header-icon.png" type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/font.css" />
+    <link rel="stylesheet" href="styles/all.min.css" />
+    <link rel="stylesheet" href="styles/media.css" />
+    <link rel="stylesheet" href="libs/bootstrap.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="container__items">
+          <div class=".header__intro">
+            <div class="header__intro-nav">
+              <div class="header__intro-left">
+                <img class="header__intro-img" src="images/header-icon.png" alt=""/>
+                <div class="header__intro-info">
+                  <p class="header__intro-name">REACT PIZZA</p>
+                  <p class="header__intro-text">самая вкусная пицца во вселенной</p>
+                </div>
+              </div>
+              <div class="header__intro-right">
+                <button class="header__intro-btn"><span class="header__intro-price">520 ₽</span><span class="header__intro-amount"> <i class="header__intro-icon fa-solid fa-cart-shopping"></i> 3</span></button>
+              </div>
+            </div>
+          </div>
+          <div class="header__intro-after"></div>
+          <div class="header__nav">
+            <div class="header__nav-content">
+              <ul class="header__nav-list">
+                <li><a class="header__nav-link header__nav-link-first header__nav-link_active" href="#!">Все</a></li>
+                <li><a class="header__nav-link header__nav-link-second" href="#!">Мясные</a></li>
+                <li><a class="header__nav-link header__nav-link-third" href="#!">Вегетарианская</a></li>
+                <li><a class="header__nav-link header__nav-link-fourth" href="#!">Гриль</a></li>
+                <li><a class="header__nav-link header__nav-link-fifth" href="#!">Острые</a></li>
+                <li><a class="header__nav-link header__nav-link-sixth" href="#!">Закрытые</a></li>
+              </ul>
+            </div>
+            <div class="header__nav-info">
+              <ul class="header__nav-list">
+                <li class="nav-item dropdown">
+                  <a class="header__nav-dropdown nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Сортировка по:
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="header__nav-dropdown_link dropdown__active dropdown-item" href="#">популярности</a></li>
+                    <li><a class="header__nav-dropdown_link dropdown-item" href="#">по цене</a></li>
+                    <li><a class="header__nav-dropdown_link dropdown-item" href="#">по алфавиту</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <section class="pizza">
+            <div class="pizza__content">
+              <h1 class="pizza__title">Все пиццы</h1>
+              <div class="row">
+                <div class="pizza__products col-3" id="Cheeseburger Pizza">
+                  <img class="pizza__content-img" src="images/pizza1.png" alt="Cheeseburger Pizza">
+                  <div class="pizza__content-info">
+                    <h6 class="pizza__content-pizza_name">Чизбургер-пицца</h6>
+                    <div class="pizza__content-box_buttons">
+                      <div class="pizza__content-boxs_btn">
+                        <button class="pizza__content-btn pizza__content-btn_active">тонкое</button>
+                        <button class="pizza__content-btn">традиционное</button>
+                      </div>
+                      <div class="pizza__content-boxs_btn">
+                        <button class="pizza__content-btns pizza__content-btns_active">26 см.</button>
+                        <button class="pizza__content-btns">30 см.</button>
+                        <button class="pizza__content-btns">40 см.</button>
+                      </div>
+                    </div>
+                    <div class="pizza__content-order">
+                      <p class="content-order__price">от 395 ₽</p>
+                      <button class="content-order__btn"> <i class="fa-solid fa-plus"></i> Добавить <span>0</span></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="pizza__products col-3" id="Cheesy">
+                  <img class="pizza__content-img" src="images/pizza2.png" alt="Cheese">
+                  <div class="pizza__content-info">
+                    <h6 class="pizza__content-pizza_name">Сырная</h6>
+                    <div class="pizza__content-box_buttons">
+                      <div class="pizza__content-boxs_btn">
+                        <button class="pizza__content-btn pizza__content-btn_active">тонкое</button>
+                        <button class="pizza__content-btn">традиционное</button>
+                      </div>
+                      <div class="pizza__content-boxs_btn">
+                        <button class="pizza__content-btns pizza__content-btns_active">26 см.</button>
+                        <button class="pizza__content-btns_dsb" disabled>30 см.</button>
+                        <button class="pizza__content-btns_dsb" disabled>40 см.</button>
+                      </div>
+                    </div>
+                    <div class="pizza__content-order">
+                      <p class="content-order__price">от 450 ₽</p>
+                      <button class="content-order__btn content-order__btn_active"> <i class="fa-solid fa-plus"></i> Добавить <span>0</span> </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="pizza__products col-3" id="Asian Shrimps">
+                  <img class="pizza__content-img" src="images/pizza3.png" alt="Cheesy Asian Shrimp">
+                  <div class="pizza__content-info">
+                    <h6 class="pizza__content-pizza_name">Креветки по-азиатски</h6>
+                    <div class="pizza__content-box_buttons">
+                      <div class="pizza__content-boxs_btn">
+                        <button class="pizza__content-btn pizza__content-btn_active">тонкое</button>
+                        <button class="pizza__content-btns_dsb" disabled>традиционное</button>
+                      </div>
+                      <div class="pizza__content-boxs_btn">
+                        <button class="pizza__content-btns_dsb" disabled>26 см.</button>
+                        <button class="pizza__content-btns pizza__content-btns_active">30 см.</button>
+                        <button class="pizza__content-btns_dsb" disabled>40 см.</button>
+                      </div>
+                    </div>
+                    <div class="pizza__content-order">
+                      <p class="content-order__price">от 290 ₽</p>
+                      <button class="content-order__btn"> <i class="fa-solid fa-plus"></i> Добавить <span>0</span></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="pizza__products col-3" id="Cheesy Chicken">
+                  <img class="pizza__content-img" src="images/pizza4.png" alt="Cheese Chicken">
+                  <div class="pizza__content-info">
+                    <h6 class="pizza__content-pizza_name">Cheese chicken</h6>
+                    <div class="pizza__content-box_buttons">
+                      <div class="pizza__content-boxs_btn">
+                        <button class="pizza__content-btn pizza__content-btn_active">тонкое</button>
+                        <button class="pizza__content-btn">традиционное</button>
+                      </div>
+                      <div class="pizza__content-boxs_btn">
+                        <button class="pizza__content-btns pizza__content-btns_active" disabled>26 см.</button>
+                        <button class="pizza__content-btns ">30 см.</button>
+                        <button class="pizza__content-btns" disabled>40 см.</button>
+                      </div>
+                    </div>
+                    <div class="pizza__content-order">
+                      <p class="content-order__price">от 385 ₽</p>
+                      <button class="content-order__btn"> <i class="fa-solid fa-plus"></i> Добавить <span>0</span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="pizza__products col-xl-3" id="Cheeseburger Pizza">
+                  <img class="pizza__content-img" src="images/pizza1.png" alt="Cheeseburger Pizza">
+                  <div class="pizza__content-info">
+                    <h6 class="pizza__content-pizza_name">Чизбургер-пицца</h6>
+                    <div class="pizza__content-box_buttons">
+                      <div class="pizza__content-boxs_btn">
+                        <button class="pizza__content-btn ">тонкое</button>
+                        <button class="pizza__content-btn pizza__content-btn_active">традиционное</button>
+                      </div>
+                      <div class="pizza__content-boxs_btn">
+                        <button class="pizza__content-btns pizza__content-btns_active">26 см.</button>
+                        <button class="pizza__content-btns">30 см.</button>
+                        <button class="pizza__content-btns">40 см.</button>
+                      </div>
+                    </div>
+                    <div class="pizza__content-order">
+                      <p class="content-order__price">от 395 ₽</p>
+                      <button class="content-order__btn"> <i class="fa-solid fa-plus"></i> Добавить <span>0</span></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="pizza__products col-xl-3" id="Cheesy">
+                  <img class="pizza__content-img" src="images/pizza2.png" alt="Cheese">
+                  <div class="pizza__content-info">
+                    <h6 class="pizza__content-pizza_name">Сырная</h6>
+                    <div class="pizza__content-box_buttons">
+                      <div class="pizza__content-boxs_btn">
+                        <button class="pizza__content-btn pizza__content-btn_active">тонкое</button>
+                        <button class="pizza__content-btn">традиционное</button>
+                      </div>
+                      <div class="pizza__content-boxs_btn">
+                        <button class="pizza__content-btns pizza__content-btns_active">26 см.</button>
+                        <button class="pizza__content-btns_dsb" disabled>30 см.</button>
+                        <button class="pizza__content-btns_dsb" disabled>40 см.</button>
+                      </div>
+                    </div>
+                    <div class="pizza__content-order">
+                      <p class="content-order__price">от 450 ₽</p>
+                      <button class="content-order__btn"> <i class="fa-solid fa-plus"></i> Добавить<span>0</span></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="pizza__products col-xl-3" id="Asian Shrimps">
+                  <img class="pizza__content-img" src="images/pizza3.png" alt="Cheesy Asian Shrimp">
+                  <div class="pizza__content-info">
+                    <h6 class="pizza__content-pizza_name">Креветки по-азиатски</h6>
+                    <div class="pizza__content-box_buttons">
+                      <div class="pizza__content-boxs_btn">
+                        <button class="pizza__content-btn pizza__content-btn_active">тонкое</button>
+                        <button class="pizza__content-btn">традиционное</button>
+                      </div>
+                      <div class="pizza__content-boxs_btn">
+                        <button class="pizza__content-btns_dsb" disabled>26 см.</button>
+                        <button class="pizza__content-btns pizza__content-btns_active">30 см.</button>
+                        <button class="pizza__content-btns_dsb" disabled>40 см.</button>
+                      </div>
+                    </div>
+                    <div class="pizza__content-order">
+                      <p class="content-order__price">от 290 ₽</p>
+                      <button class="content-order__btn"> <i class="fa-solid fa-plus"></i> Добавить <span>0</span></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="pizza__products col-xl-3" id="Cheesy Chicken">
+                  <img class="pizza__content-img" src="images/pizza4.png" alt="Cheese Chicken">
+                  <div class="pizza__content-info">
+                    <h6 class="pizza__content-pizza_name">Cheese chicken</h6>
+                    <div class="pizza__content-box_buttons">
+                      <div class="pizza__content-boxs_btn">
+                        <button class="pizza__content-btn pizza__content-btn_active">тонкое</button>
+                        <button class="pizza__content-btn">традиционное</button>
+                      </div>
+                      <div class="pizza__content-boxs_btn">
+                        <button class="pizza__content-btns pizza__content-btns_active" disabled>26 см.</button>
+                        <button class="pizza__content-btns ">30 см.</button>
+                        <button class="pizza__content-btns" disabled>40 см.</button>
+                      </div>
+                    </div>
+                    <div class="pizza__content-order">
+                      <p class="content-order__price">от 385 ₽</p>
+                      <button class="content-order__btn"> <i class="fa-solid fa-plus"></i> Добавить <span>0</span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </header>
+
+    <script src="libs/bootstrap.bundle.min.js"></script>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
